@@ -12,3 +12,8 @@ function slideShow(n){
     }
     slides[slidePosition-1].style.display="block"
 }
+
+//docuemnt .get ready line 2
+// 2 function forward slide backward sldie
+//events hadling for forward and back
+// cehck box for automatci slide
