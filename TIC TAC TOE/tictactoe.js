@@ -63,7 +63,7 @@ for (let i=0;i<boxes.length;i++){
               ) {
                 Winner();
               }     
-        }
+        }else drawGame()
     })
 }
 function Winner() {
@@ -74,6 +74,7 @@ function Winner() {
 function drawGame() {
     window.alert("Game Draw!")
     gameStatus=false
+    reset()
 }
 function reset(){
     for(let i=0;i<boxes.length;i++){
