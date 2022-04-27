@@ -4,7 +4,7 @@ let infinteScroll=document.getElementById('infinite-scroll')
 let loadMore=function(){
     for(let i=0;i<50;i++){
         let item=document.createElement('li')
-        item.innerText=`Item ${listItem++}`
+        item.innerHTML=`Item ${listItem++}`
         item.classList.add('items')
         infinteScroll.appendChild(item)
         // console.log('hi')
@@ -34,10 +34,10 @@ function myFunction(){
     // if(input.value.macth)
     for (var i = 0; i < cards.length; i++) { 
         if(cards[i].innerText.toLowerCase()
-                .includes(search.toLowerCase())) {console.log(search)
-            cards[i].classList.add("is-hidden");console.log(cards[i],'1')
+                .match(search.toLowerCase())) {//alert(search)
+            cards[i].classList.remove("is-hidden");//console.log(cards[i],'1')
         } else {
-            cards[i].classList.remove("is-hidden");console.log(cards[i],'2')
+            cards[i].classList.add("is-hidden");//console.log(cards[i],'2')
         }
     }
     }

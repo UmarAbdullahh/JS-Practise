@@ -36,6 +36,7 @@ let btnadd = document.getElementById("btn-add");
         }
       };
       message.textContent=""
+      
       const editTask = (currentelem) => {
         if (currentelem.textContent == "Done") {
           currentelem.textContent = "Edit";
