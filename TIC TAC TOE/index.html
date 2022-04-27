@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+        <div class="table-container">
+            <p>Player <span id="player">X</span> your turn</p>
+            <table align="center">
+            <tr>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+            </tr>
+            <tr>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+            </tr>
+            <tr>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+                <td><div class="box"></div></td>
+            </tr>
+            </table>
+            <h2 id="message">Player <span id="winner"></span> Wins</h2>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <script src="tictactoe.js"></script>
+</body>
+</html>
