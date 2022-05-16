@@ -6,20 +6,23 @@ let input=document.getElementById('input')
 let seconds=60
 let score=0
 let words;
-const countDown=()=>{
-   let time= setInterval(function(){
-        button.disabled = true;
-       seconds--;
-       timer.innerHTML=`Time Left : ${seconds}s`
-       if(seconds===0){
-        alert("Game over! Your score is " + score);
-        clearInterval(time)
+function reset(){
         seconds=60
         points.innerHTML='Score : 0'
         timer.innerHTML=`Time Left : ${seconds}s`
         button.disabled = false;
         word.innerHTML=""
         score=0
+}
+const countDown=()=>{
+   let time= setInterval(function(){
+        button.disabled = true;
+        seconds--;
+        timer.innerHTML=`Time Left : ${seconds}s`
+       if(seconds===0){
+        alert("Game over! Your score is " + score);
+        clearInterval(time)
+        reset()
        }
    },1000)
 }
@@ -39,6 +42,7 @@ button.addEventListener('click',()=>{
         random()
     }
 }
+
 
 
 
