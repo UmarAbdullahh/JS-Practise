@@ -6,6 +6,7 @@ let input=document.getElementById('input')
 let seconds=60
 let score=0
 let words;
+
 function reset(){
         seconds=60
         points.innerHTML='Score : 0'
