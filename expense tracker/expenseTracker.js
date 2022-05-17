@@ -43,7 +43,7 @@ function openLink(cityName){
            localStorage.setItem('blnce',balance)
                 expmsg.innerHTML=`EXPENSE : $${expense}`
                 blncmsg.innerHTML=`BALANCE : $${balance}`
-                // income=0.00
+                income=0.00
                 incmmsg.innerHTML=`INCOME : $${income}`
                 errmsg.innerHTML=`Transaction Successfull with msg ${msg}`
                 let entry = document.createElement('LI');
@@ -64,7 +64,7 @@ function openLink(cityName){
             localStorage.getItem('expense')
             balance+=income
            localStorage.setItem('blnce',balance)
-            // expense=0.00
+            expense=0.00
             
                 expmsg.innerHTML=`EXPENSE : $${expense}`
             incmmsg.innerHTML=`INCOME : $${income}`
@@ -75,8 +75,8 @@ function openLink(cityName){
                 let message= `Income Transaction of $${income} made with msg ${msg}`
                 entry.appendChild(document.createTextNode(message))
                 history.appendChild(entry)
-        }//income=0.00
-        //expense=0.00
+         }income=0.00
+        expense=0.00
         
 
     })
